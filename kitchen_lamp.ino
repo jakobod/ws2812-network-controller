@@ -22,7 +22,9 @@ void setup() {
 
   strip.Begin();
   strip.Show();
-  
+
+  wifi_station_set_hostname("kitchenLamp");
+    
   Serial.println("Booting");
   WiFi.mode(WIFI_STA);
   WiFi.begin(SSID, PASS);
